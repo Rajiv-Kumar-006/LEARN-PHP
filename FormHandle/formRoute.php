@@ -15,8 +15,13 @@
     $pass = $_POST['txtpass'];
     echo " user Name :" . $user . "<br>";
     echo "Password : " . $pass;
-   
+    setcookie("username", $user, time() + (86400 * 30)); // 86400 = 1 day
+    setcookie("password", $pass, time() + (86400 * 30)); // 86400 = 1 day
     ?>
 </body>
+
+<form action="FormCookies.php" method="post">
+    <button type="submit">Go to Next Page</button>
+</form>
 
 </html>
