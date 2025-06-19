@@ -10,15 +10,15 @@
 <body>
     <center>
         <h1>Form Handle : 1</h1>
-        <form action="formRoute.php" method="post">
+        <form action="formRoute.php" method="POST">
             <table border="1">
                 <tr>
                     <th>Name</th>
-                    <td><input type="text" name="user"></td>
+                    <td><input type="text" name=txtuser></td>
                 </tr>
                 <tr>
                     <th>password</th>
-                    <td><input type="password" name="pass"></td>
+                    <td><input type="password" name=txtpass></td>
                 </tr>
                 <tr>
                     <td></td>
